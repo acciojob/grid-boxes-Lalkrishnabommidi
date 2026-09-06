@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+}
+
+.item {
+min-height: 100px;
+}
+
+.item:first-child {
+grid-column: span 2;
+}
